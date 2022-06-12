@@ -38,20 +38,11 @@ $logado = $_SESSION['nome'];
 
 <?php
  
-// To check if session is started.
-if(isset($_SESSION["id"]))
-{
-    if(time()-$_SESSION["login_time_stamp"] > 5) 
+    if(time() - $_SESSION["login_time"] > 10) 
     {
-        session_unset();
         session_destroy();
-        header("Location:login.php");
+        echo "<script>alert('Você foi desconectado !');location.href='../pages/login.php';</script>";
     }
-}
-else
-{
-    header("Location:consultarBanco.php");
-}
 ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -138,7 +129,7 @@ else
       <td><?php echo $dado_usu["senha"]; ?></td>
       <td><?php echo date("d/m/Y H:i", strtotime($dado_usu["created"])); ?></td>
       <td>
-      <a href="javascript: if(confirm('Tem certeza que deseja editar o usuário <?php echo $dado_usu['id']; ?>?')) location.href='../pages/editar.php?=editar&id=<?php echo $dado_usu['id']; ?>';">Editar</a>
+      <a href="javascript: if(confirm('Tem certeza que deseja editar o usuário <?php echo $dado_usu['id']; ?>?')) window.open('../pages/editar.php?=editar&id=<?php echo $dado_usu['id']; ?>');">Editar</a>
     </td>
     <td>
         <a href="javascript: if(confirm('Tem certeza que deseja deletar o usuário <?php echo $dado_usu['id']; ?>?')) location.href='../pages/consultaBanco.php?deletar1=deletar1&id=<?php echo $dado_usu['id']; ?>';">Deletar</a>
