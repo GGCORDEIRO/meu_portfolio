@@ -9,12 +9,8 @@
  session_start();
   
  if(isset($_POST["email"])) {
-  
-     // Session Variables are created
      $_SESSION["id"];  
-  
-     // Login time is stored in a session variable
-     $_SESSION["login_time_stamp"] = time(); 
+     $_SESSION["login_time"] = time(); 
      header("Location:consultaBanco.php");
  }
  ?>
@@ -96,11 +92,8 @@ if(isset($_POST['email'])){
 </body>
 </html>
 <style>
-.container {
-	background: linear-gradient(-45deg, rgb(0,255,255), rgb(95,95,95), rgb(0,255,255));
-	background-size: 400% 400%;
-	animation: gradient 25s ease-in infinite;
-	height: 100vh;
+  body {
+  background-image: linear-gradient(to top right, rgb(0,200,200), black);
 }
 
 @keyframes gradient {
