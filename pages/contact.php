@@ -64,7 +64,7 @@
             <section class="conteudo-criador">
                 <div class="criador-1">
                     <div class="conteudo-imagem-geovane">
-                        <img class="bord" title="Geovane" src="../src/assets/Geovane.png" alt="Geovane">
+                        <a href="pdf.php"><img class="bord" title="Geovane" src="../src/assets/Geovane.png" alt="Geovane"></a>
                     </div>
                     <h2 class="nome">Geovane</h2>
                     <div class="conteudo-redes-geovane">
@@ -92,7 +92,7 @@
                         <input size="15" type="tel" name="whatsapp" id="whatsapp" minlength="8" maxlength="15" inputmode="numeric" autocomplete="tel" placeholder="(__) _____-____" required="">
                     </div>
                     <div class="box-form">
-                        <label for="subscribe">Aceita contato pelo Whatsapp ?</label><br>
+                        <label for="subscribe">Aceita contato via Whatsapp ?</label><br>
                         <input type="radio" name="subscribe" value="Sim" id="subscribe" checked> Sim
                         <input type="radio" name="subscribe" value="Não" id="subscribe"> Não
                     </div>
