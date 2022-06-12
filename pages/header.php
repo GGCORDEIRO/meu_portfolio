@@ -29,7 +29,7 @@ if((!isset ($_SESSION['id']) == true))
       <li style="display:<?php echo $consul ?>;"><a href="/pages/consultaBanco.php">Consulta Dados</a></li>
       <li class="aba_dev">Desenvolvedor
       <ul class="nav_dev">
-          <li><a href="#">???</a></li>
+          <li><a href="/pages/pdf.php">Curriculum</a></li>
           <li><a href="/pages/contact.php">Contato</a></li>
       </ul>
     </li>
