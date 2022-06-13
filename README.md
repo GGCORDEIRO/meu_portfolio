@@ -9,12 +9,7 @@ Este repositório é destinado à projetos/desafios que venha a acrescentar no m
 - JS<br>
 - PHP<br>
 - MySQL<br>
-- Inserção de imagens<br>
-- Icones animados!<br>
-- Animações com CSS!<br>
-- Estilizações com css<br>
-- Github em equipe<br>
-- 
+- Github<br
 
 # Preview
 
